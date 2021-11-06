@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,8 @@
 		38ECB0C527350B4E00A15FB1 /* projectatulsia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 38ECB0C327350B4E00A15FB1 /* projectatulsia.xcdatamodeld */; };
 		38ECB0C727350B5200A15FB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38ECB0C627350B5200A15FB1 /* Assets.xcassets */; };
 		38ECB0CA27350B5200A15FB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38ECB0C827350B5200A15FB1 /* LaunchScreen.storyboard */; };
+		38ECB0DA27350C9900A15FB1 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38ECB0D927350C9900A15FB1 /* TableViewCell.swift */; };
+		CE95F88FE4B0F62F08679A71 /* Pods_projectatulsia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC36F75A6656186168E6559 /* Pods_projectatulsia.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		38ECB0C627350B5200A15FB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38ECB0C927350B5200A15FB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38ECB0CB27350B5200A15FB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38ECB0D927350C9900A15FB1 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		80BB4B3F4B093B607F3B1B79 /* Pods-projectatulsia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projectatulsia.release.xcconfig"; path = "Target Support Files/Pods-projectatulsia/Pods-projectatulsia.release.xcconfig"; sourceTree = "<group>"; };
+		9B69E49C899F593B81569E31 /* Pods-projectatulsia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projectatulsia.debug.xcconfig"; path = "Target Support Files/Pods-projectatulsia/Pods-projectatulsia.debug.xcconfig"; sourceTree = "<group>"; };
+		EDC36F75A6656186168E6559 /* Pods_projectatulsia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_projectatulsia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE95F88FE4B0F62F08679A71 /* Pods_projectatulsia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +51,8 @@
 			children = (
 				38ECB0B927350B4E00A15FB1 /* projectatulsia */,
 				38ECB0B827350B4E00A15FB1 /* Products */,
+				4B7FE47D2779F5442E4F044C /* Pods */,
+				F9161782CD3B243308D9359E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,8 +75,26 @@
 				38ECB0C827350B5200A15FB1 /* LaunchScreen.storyboard */,
 				38ECB0CB27350B5200A15FB1 /* Info.plist */,
 				38ECB0C327350B4E00A15FB1 /* projectatulsia.xcdatamodeld */,
+				38ECB0D927350C9900A15FB1 /* TableViewCell.swift */,
 			);
 			path = projectatulsia;
+			sourceTree = "<group>";
+		};
+		4B7FE47D2779F5442E4F044C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B69E49C899F593B81569E31 /* Pods-projectatulsia.debug.xcconfig */,
+				80BB4B3F4B093B607F3B1B79 /* Pods-projectatulsia.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F9161782CD3B243308D9359E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDC36F75A6656186168E6559 /* Pods_projectatulsia.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38ECB0CE27350B5200A15FB1 /* Build configuration list for PBXNativeTarget "projectatulsia" */;
 			buildPhases = (
+				492060FE5B6FEB7908F43B6D /* [CP] Check Pods Manifest.lock */,
 				38ECB0B327350B4E00A15FB1 /* Sources */,
 				38ECB0B427350B4E00A15FB1 /* Frameworks */,
 				38ECB0B527350B4E00A15FB1 /* Resources */,
+				2843291FE9C4E9EB899CC445 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +164,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2843291FE9C4E9EB899CC445 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-projectatulsia/Pods-projectatulsia-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-projectatulsia/Pods-projectatulsia-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-projectatulsia/Pods-projectatulsia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		492060FE5B6FEB7908F43B6D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-projectatulsia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		38ECB0B327350B4E00A15FB1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -143,6 +214,7 @@
 				38ECB0BF27350B4E00A15FB1 /* ViewController.swift in Sources */,
 				38ECB0C527350B4E00A15FB1 /* projectatulsia.xcdatamodeld in Sources */,
 				38ECB0BB27350B4E00A15FB1 /* AppDelegate.swift in Sources */,
+				38ECB0DA27350C9900A15FB1 /* TableViewCell.swift in Sources */,
 				38ECB0BD27350B4E00A15FB1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +359,7 @@
 		};
 		38ECB0CF27350B5200A15FB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B69E49C899F593B81569E31 /* Pods-projectatulsia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -305,6 +378,7 @@
 		};
 		38ECB0D027350B5200A15FB1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80BB4B3F4B093B607F3B1B79 /* Pods-projectatulsia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
